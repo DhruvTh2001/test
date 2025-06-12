@@ -1,0 +1,885 @@
+.bluebackground {
+    background: url(img/loginimg.png);
+    background-size: 100% 100%;
+      position: relative;
+}
+.col-sm-6.bluebackground.vh-100 {
+    height: 100.5vh 
+ !important;
+}
+.footercopyright {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+}
+.logo {
+    text-align: center;
+    margin-top: 0px !important;
+}
+section.login .logo img.logo.react {
+    width: 115px;
+}
+.lang {
+    text-align: right;
+    margin: 10px 15px 0 !important;
+}
+.col-sm-6.loginwin {
+   background: #f3f3f3;
+    position: relative; 
+}
+.lang select {
+    border: 2px solid #ffc310;
+    width: 100px;
+    outline: unset !important;
+}
+section.login .logo h2 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 10px !important;
+}
+p.logosubheading {
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 8px !important;
+}
+.loginform form {
+    max-width: 320px;
+    margin: 0 auto !important;
+    display: block;
+    width: 320px;
+}
+.loginform form label {
+    display: block;
+    text-align: left;
+    margin-top: 5px !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+ form label button.btn.btn-primary {
+   background: #e1526d !important;
+    border: unset !important;
+    margin-left: 6px !important;
+    padding: 0 !important;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+form label button.btn.btn-primary i.bi.bi-exclamation {
+    position: relative;
+    bottom: 5px;
+    font-size: 20px;
+}
+.chatbotcircle img.chatavtarimg {
+    border-radius: 50%;
+    width: 45px;
+}
+.chatbotcircle button {
+    padding: 0;
+    height: auto !important;
+    position: relative;
+    bottom: 12px;
+    right: 4px;
+}
+ 
+nav.sidebar.d-flex.flex-column {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+     
+}
+
+.loginform form input {
+    width: 100%;
+    border: 2px solid #ffc310 !important;
+    height: 36px;
+    margin-top: 4px !important;
+    padding: 3px 10px !important;
+    outline: unset !important;
+}
+.loginform {
+    margin-top: 15px !important;
+}
+.forgetpw {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 500;
+}
+.otpbox {
+    display: flex;
+    gap: 10px;
+    width: 195px;
+    margin: 0 auto !important;
+}
+.otpbox input[type="text"] {
+    text-align: center;
+    font-weight: 500;
+}
+.resendotp {
+    text-align: RIGHT;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px !important;
+}
+.loginform .signinbtn {
+    background: #a1c0e5;
+    border: 2px solid #70a6da !important;
+    font-weight: 500;
+}
+.loginform .signinbtn {
+    background: #a1c0e5;
+    border: 2px solid #70a6da !important;
+    font-weight: 500;
+    margin-top: 20px !important;
+}
+.loginform button .signinbtn {
+    background: #a1c0e5;
+    border: 2px solid #70a6da !important;
+    font-weight: 500;
+    margin-top: 20px !important;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 4px;
+}
+button.buttonsign {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+    width: 100%;
+    background: transparent !important;
+}
+button.buttonsign {
+    border: unset !important;
+}
+.notaccount {
+    text-align: center;
+    margin: 10px !important;
+    font-weight: 500;
+}
+.notaccount a {
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+.chatbot {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-size: 35px;
+    width: 35px;
+}
+.chatbot.leftside {
+    z-index: 3; 
+}
+.regform.loginform form {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    display: block;
+    width: 90%;
+}
+.regform.loginform form .row .col-sm-6 {
+    width: 49%;
+}
+.regform.loginform form .row {
+    gap: 10px;
+}
+.loginform .signup {
+    background: #a1c0e5;
+    border: 2px solid #70a6da !important;
+    font-weight: 500;
+    width: 320px;
+    margin: 20px auto !important;
+    display: block;
+}
+.col-sm-12.checkboxtnc {
+    display: flex;
+    align-items: anchor-center;
+    gap: 8px;
+    margin-top: 15px !important;
+}
+input.signupcheck {
+    width: 18px !important;
+    height: 18px !important;
+}
+ 
+.container-fluid.topbar {
+    background: #adb9ca;
+    padding: 0px 15px !important; 
+}
+a.linktext {
+    color: #000;
+    text-decoration: none;
+}
+.epr-skin-tones.epr_-v86i3b.epr_q53mwh.epr_vl50xg.epr_vwruzc.epr_zeg9on.epr_qyh4cg {
+    display: none !important;
+}
+div#epr-category-nav-id {
+    display: none;
+}
+.droptrans {
+    display: flex;
+    align-items: anchor-center;
+}
+button#dropdown-basic {
+    background: transparent !important;
+    border: unset;
+    color: #000 !important;
+    font-size: 20px;
+    font-weight: 500;
+}
+button#dropdown-basic::after {
+    font-size: 0px;
+    margin-right: 5px;
+}
+.dropdown-contents.dropdown-menu.show {
+    background: #8faadc;
+}
+span.search {
+    display: flex;
+    padding: 5px 10px 10px 10px;
+    position: relative;
+    height: 40px;
+}
+span.search i.bi.bi-search {
+    position: absolute;
+    right: 15px;
+}
+span.search input {
+    outline: unset !important;
+    padding: 0px 30px 0px 5px;
+    position: absolute;
+    width: 90%;
+    border: 1px solid #4472c4;
+}
+.btnright button {
+    background: #ffc000;
+    width: 100px;
+    padding: 2px 0 !important;
+    border: 2px solid #ffc000;
+    margin: 5px 0;
+} 
+section.innerheader .container-fluid.topbar .innertopbar h4, section.chatbot_info .container-fluid.topbar .innertopbar h4 {
+    margin: 0 !important;
+    font-size: 20px;
+}
+.btnright button:hover {
+    background: #000;
+    color: #ffff;
+}
+.container.innertopbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: anchor-center;
+}
+.btnright {
+    display: flex;
+    gap: 15px;
+}
+form.chatbotform .col-sm-4 label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+form.chatbotform .col-sm-8 input, form.chatbotform .col-sm-8 select, form.chatbotform .col-sm-8 textarea {
+    width: 100%;
+    border: 2px solid #ffc310 !important;
+    height: 36px;
+    padding: 3px 10px !important;
+    outline: unset !important;
+    margin-top: 15px !important;
+}
+form.chatbotform .col-sm-8 input[type="file"] {
+    padding: 1px 12px !important;
+}
+form.chatbotform .col-sm-8 textarea {
+    height: auto !important;
+}
+form.chatbotform {
+    margin-top: 25px;
+}
+img.previewimg {
+    width: 200px;
+    height: 230px;
+    margin-top: 40px;
+    border: 2px solid #ffc310;
+}
+p.uploaddocdetail {
+    background: gainsboro;
+    height: 36px;
+    padding: 5px 15px;
+    margin-top: 15px;
+}
+section.chatbot_details .container {
+    
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+ .chatbot_details_box .container{
+    border-bottom: 2px solid #ed7d31;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.docbox {
+    width: 200px !important;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+p.maindocbox {
+    background: gainsboro;
+    height: 36px;
+    padding: 5px 15px;
+    margin: 8px 0 0 0;
+}
+section.chatbot_details_data table th span {
+    background: #a1c0e5;
+    border: 2px solid #70a6da !important;
+    font-weight: 500;
+    margin: 0px !important;
+    padding: 5px 5px;
+    display: block;
+}
+section.chatbot_details_data table td, section.chatbot_details_data table th {
+    border-width: 0 !important;
+    margin: 4px 0 !important;
+    padding: 4px 3px;
+}
+select.filter {
+    border: 2px solid #ffc310;
+    width: 100%;
+    outline: unset !important;
+    padding: 4px 0;
+    margin-bottom: 10px;
+}
+section.chatbot_details_data table td span {
+    background: #bfbfbf;
+    display: block;
+    padding: 4px 5px;
+    min-height: 34px;
+    border: 1px solid #ed7d31 !important;
+}
+td.usernamepic {
+    display: flex;
+    padding: 0 4px !important;
+    gap: 5px;
+}
+td.usernamepic span {
+    width: 100%;
+}
+span.trashicon {
+    text-align: center;
+}
+td.usernamepic img {
+    background: #bfbfbf;
+    display: block;
+    border: 1px solid #ed7d31 !important;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+section.chatbot_doc_page {
+    background: #f3f3f3;
+}
+section.chatbot_details_data table.table.table-sm td, section.chatbot_details_data table.table.table-sm th {
+    background: transparent !important;
+}
+section.chatbot_details_data {
+    padding-bottom: 50px;
+}
+section.chatbot_details {
+    background: #f3f3f3;
+    min-height: 100vh;
+}
+section.doc_details .container {
+    border-bottom: 2px solid #ed7d31;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.chatbotn .active-class {
+    width: 400px !important;
+    height: 600px !important;
+}
+.active-class.inactive-class {
+    height: 55px !important;
+    width: 300px !important;
+}
+
+    .wrapper {
+      display: flex;
+      height: auto;
+    }
+
+    .sidebar {
+    width: 70px;
+    background-color: #a1b8e1;
+    transition: width 0.3s;
+    /*overflow-x: hidden;*/
+}
+img.dashboardlogo {
+    width: 42px;
+}
+.dashboardlogo {
+    display: flex;
+    gap: 10px;
+    align-items: anchor-center;
+}
+    .sidebar:hover {
+      width: 260px;
+    }
+
+   .sidebar .nav-link {
+    color: #000 !important;
+    white-space: nowrap;
+    transition: background 0.3s;
+}
+
+    .sidebar .nav-link:hover {
+      background-color: #fff;
+    }
+
+    .sidebar i {
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    }
+
+    .sidebar span {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .sidebar:hover span {
+      opacity: 1;
+    }
+
+    .sidebar .submenu {
+      display: none;
+      padding-left: 2rem;
+    }
+
+    .sidebar:hover .has-submenu:hover .submenu {
+      display: block;
+    }
+
+    .content {
+      flex-grow: 1; 
+    }
+.dashboardtopbar {
+    background: #8faadc;
+    color: #fff;
+    padding:  0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: anchor-center;
+}
+.username img.propic {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+.username {
+    display: flex;
+    gap: 6px;
+}
+.top-right {
+    display: flex;
+    gap: 25px;
+    align-items: anchor-center;
+}
+.top-right  .notification i.bi.bi-bell {
+    color: #fff;
+    font-size: 22px;
+}
+span.badge {
+    position: absolute;
+    background: blue;
+    border-radius: 50%;
+    right: -8px;
+    top: 0;
+    font-size: 10px;
+}
+.companyname {
+    font-size: 17px;
+    font-weight: 600;
+}
+    .sidebar-header {
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-bottom: 1px solid #495057;
+    }
+
+    .has-submenu > .nav-link:after {
+      content: '\f105';
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      float: right;
+      margin-right: 10px;
+      transition: transform 0.3s;
+    }
+
+    .sidebar:hover .has-submenu:hover > .nav-link:after {
+      transform: rotate(90deg);
+    }
+	
+	
+	
+	
+	
+	/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 7px 16px;
+    font-size: 16px;
+    border: none;
+}
+a.notification {
+    position: relative;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8faadc;
+    min-width: 205px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+    right: 20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 7px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown.dashboardright a span {
+    display: inline-block;
+    width: 20px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+.dropbtn i.bi.bi-three-dots-vertical {
+    font-size: 22px;
+    color: #000;
+}
+ 
+.innertopbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: anchor-center;
+}
+
+section.dashboardkpi {
+    background: #f3f3f3;
+    min-height: 95vh;
+    padding: 25px 15px;
+}
+section.dashboardkpi .top.filter span {
+    background: #a1c0e5;
+    border: 2px solid #70a6da !important;
+    font-weight: 500;
+    margin-top: 20px !important;
+    padding: 3px 15px;
+    margin-right: 8px;
+}
+.dashboardkpi .top.filter select.select {
+    padding: 3px 5px;
+    border: 1px solid #ed7d31 !important;
+    min-width: 150px;
+    outline: unset;
+}
+.dataquerybox {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    gap: 15px;
+}
+section.dashboardkpi .top.filter {
+    display: flex;
+    gap: 20px;
+}
+.dataquerybox .box.databox {
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(#e0e4ef, #899fd7);
+    border: 1px solid #5e83cb;
+    padding: 15px 10px 15px;
+}
+.dataquerybox .box.databox h5 {
+    font-size: 15px;
+}
+.dataquerybox .box.databox ul {
+    text-align: left;
+    padding: 0 0 0 22px;
+    margin: 0;
+}
+
+.chartpart {
+    display: flex;
+    
+}
+.charttwo {
+    margin-top: 80px;
+    border-top: 2px solid #ffc000;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.charttwo ul.recharts-default-legend {
+    margin-top: 35px !important;
+}
+.chartthree {
+    border-left: 2px solid #ffc000;
+    padding-left: 25px;
+    text-align: center;
+}
+.chartthree .recharts-wrapper {
+    margin: 30px auto 0;
+}
+
+.bgblue {
+    background: #b4c7e7;
+    padding: 0;
+}
+.menu_section a.nav-link {
+    font-weight: 500;
+}
+ul.dropdown-menu.show {
+    background: #b4c7e7;
+}
+
+/*chat css*/
+.chatheader {
+    flex-direction: column;
+}
+.chatheadertop {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5px !important;
+}
+.avtarsec span {
+    line-height: 1.2;
+    font-size: 14px;
+    font-weight: 500;
+}
+.avtarsec span span {
+    font-style: italic;
+}
+.avtarsec {
+    width: 135px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+.avtarsec img.chatavtarimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.weareonline strong {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.chatbotsetting {
+    text-align: right;
+}
+.chatbotsetting .dropbtn {
+    padding: 2px 10px;
+}
+.chatbotsetting .dropdown-content {
+    text-align: left;
+}
+.rightchatbtn button {
+    padding: 0;
+    background: #0852f3 !important;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    font-size: 13px !important;
+    border: 1px solid #0852f3 !important;
+}
+.rightchatbtn {
+    display: flex;
+    gap: 0px;
+}
+.googletranslate img {
+    width: 30px;
+}
+.chatbotsetting .dropdown.dashboardright {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.chatbotsetting {
+    display: flex;
+    justify-content: space-between;
+}
+button.sendmsg {
+    font-size: 30px;
+    padding: 0 10px !important;
+}
+button.micvoice {
+    color: #0852f3;
+    font-size: 24px !important;
+    
+}
+.chatfooter button {
+    padding: 10px 10px !important;
+    height: 58px !important;
+}
+.chatfooter {
+    background: #8faadc;
+    display: flex;
+    align-items: end;
+}
+.chatfooter p.powerby {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+    width: 80%;
+    margin: 0 10px 10px 0;
+}
+aside.epr-main.EmojiPickerReact {
+    margin-bottom: 60px;
+}
+ 
+.rightchatbtn button {
+    outline: unset !important;
+}
+.chatbotn button {
+    background: transparent;
+}
+.dashbartop-fix {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+section.innerheader,section.chatbot_info {
+    position: sticky;
+    top: 87px;
+    z-index: 9;
+}
+.menu_section nav.navbar.navbar-expand-lg.bgblue {
+    padding: 0;
+}
+
+
+
+
+
+
+/*chat css end*/
+
+@media only screen and (max-width: 600px) and (min-width: 320px)  { 
+.notaccount {
+    margin-bottom: 50px !important;
+}
+nav.sidebar.d-flex.flex-column {
+    height: auto;
+}
+.content {
+    width: calc(100% - 70px);
+}
+.dashboardkpi .top.filter select.select {
+    min-width: 130px;
+}
+section.login>.container-fluid>.row {
+    flex-direction: column-reverse;
+}
+.regform.loginform form .row {
+    gap: 0;
+}
+.col-sm-12.checkboxtnc {
+    display: inline-block; 
+}
+.navbar-toggler:focus {
+    box-shadow: unset;
+}
+section.dashboardkpi .top.filter { 
+    gap: 10px;
+    flex-direction: column;
+}
+.dataquerybox { 
+    flex-direction: column;
+}
+.chartpart { 
+    flex-direction: column;
+}
+.chartthree {
+    border-left: unset;
+    padding-left: 0;
+    text-align: center;
+    border-top: 2px solid #ffc000;
+}
+.chartone, .charttwo, .chartthree {
+    width: 320px !important;
+    overflow-x: scroll;
+}
+.chartone {
+    margin-bottom: 50px;
+}
+.btnright {
+    flex-direction: column;
+    gap: 6px !important;
+}
+.innertopbar {
+    align-items: anchor-center;
+}
+.dashboardtopbar .companyname {
+    flex: 0 0 65px;
+}
+.dashboardtopbar .top-right img.propic {
+    display: none;
+}
+.dashboardtopbar .top-right {
+    gap: 12px;
+}
+.dashboardtopbar .top-right  .username span {
+    font-size: 13px;
+    line-height: 1.2;
+}
+section.chatbot_details_box .container .row {
+    flex-direction: column;
+}
+section.chatbot_details_box .container .row .docbox {
+    width: 100% !important; 
+}
+ 
+table.table.table-sm {
+    width: 100% !important;
+}
+.table-responsive {
+    width: 280px !important;
+}
+.navbar-toggler:focus { 
+    box-shadow: unset !important;
+}
+section.chatbot_details_data table th span { 
+    width: 150px;
+}
+section.chatbot_details_data table th:nth-child(1) span { 
+    width:50px;
+}
+}
