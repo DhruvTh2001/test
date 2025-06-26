@@ -35,7 +35,7 @@ export default function Navbar() {
                                     Document Management
                                 </Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><Link className="dropdown-item" to="#">Document Upload</Link></li> 
+                                    <li><Link className="dropdown-item" to="/document-management">Document Upload</Link></li> 
                                 </ul>
                             </li>
 
@@ -44,8 +44,8 @@ export default function Navbar() {
                                     Dashboard
                                 </Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><Link className="dropdown-item" to="#">Dashboard #1</Link></li> 
-                                    <li><Link className="dropdown-item" to="#">Dashboard #2</Link></li>
+                                    <li><Link className="dropdown-item" to="/dashboard">Dashboard </Link></li> 
+                                    {/* <li><Link className="dropdown-item" to="#">Dashboard #2</Link></li> */}
                                 </ul>
                             </li>
 

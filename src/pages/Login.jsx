@@ -52,7 +52,7 @@ export default function Login() {
                   </label>
                     <input type="password" name="password" ></input>
                   </div>
-                  <div className='forgetpw'><Link className='linktext'  to = "#"  ><u>Forgot Password?</u></Link></div>
+                  <div className='forgetpw'><Link className='linktext'  to = "/forgot-password"  ><u>Forgot Password?</u></Link></div>
 
 
 

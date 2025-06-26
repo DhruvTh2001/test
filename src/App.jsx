@@ -13,7 +13,8 @@ import Document_management from "./pages/Document_management";
 import Dashboard from "./pages/Dashboard";
 import Dashboard_page from "./pages/Dashboard_page"; 
 import ChatWindow from "./pages/ChatWindow";
- 
+import ForgotPassword from './pages/ForgotPassword';
+
  
 function App() {
   const [count, setCount] = useState(0)
@@ -31,7 +32,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard/>} /> 
           <Route path="/dashboard-page" element={<Dashboard_page/>} /> 
           <Route path="/chat" element={<ChatWindow/>} /> 
-
+          <Route path="/document-management" element={<Document_management />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
             
           
        </Routes>

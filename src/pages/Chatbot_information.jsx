@@ -1,13 +1,15 @@
 import { OverlayTrigger, Tooltip, Button } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import React, { useState } from "react";
 import Dashboard_sidebar from '../components/dashboard/Dashboard_sidebar';
 import Dashboard_topbar from '../components/dashboard/Dashboard_topbar';
+
 
 export default function Chatbot_information() {
 
 
   const [file, setFile] = useState();
+  const navigate = useNavigate();
 
   function handleChange(e) {
     console.log(e.target.files);
@@ -42,7 +44,8 @@ export default function Chatbot_information() {
                     <h4>Chatbot Information</h4>
                     <div className='btnright'>
                       <button type="button" className='savebtn'>Save</button>
-                      <button type="button" className='canclebtn'>Close</button>
+                      <button type="button" className='canclebtn' onClick={() => navigate('/dashboard')}>Close</button>
+
                     </div>
                   </div>
                 </div>

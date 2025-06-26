@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Table from 'react-bootstrap/Table'
 import userpic from '/img/userpic.png'
+import { useNavigate } from 'react-router-dom';
+
 
 import Dashboard_sidebar from '../components/dashboard/Dashboard_sidebar';
 import Dashboard_topbar from '../components/dashboard/Dashboard_topbar';
@@ -11,12 +13,65 @@ import Dashboard_topbar from '../components/dashboard/Dashboard_topbar';
 export default function Document_management() {
 
 
+
+    //changes
+    const navigate = useNavigate();
+    const [docName, setDocName] = useState('');
+
+
+    const [docInfo, setDocInfo] = useState(null); // for document details
+    const [tableData, setTableData] = useState([]); // for extracted data table
+    
     const [file, setFile] = useState();
 
+    
+    //changes
     function handleChange(e) {
-        console.log(e.target.files);
-        setFile(URL.createObjectURL(e.target.files[0]));
-    }
+    const uploadedFile = e.target.files[0];
+    if (!uploadedFile) return;
+
+    setFile(URL.createObjectURL(uploadedFile));
+
+    // Simulate API processing
+    setTimeout(() => {
+        const dummyDocInfo = {
+            size: "1.2 MB",
+            pages: 4,
+            images: 3,
+            tables: 2
+        };
+
+        const dummyTableData = [
+            {
+                id: 1,
+                name: docName || uploadedFile.name, // use custom name if available
+                path: "C:/docs/" + uploadedFile.name,
+                time: "12:30 PM",
+                meta: "PDF",
+                uploadedBy: "Ash"
+            }
+        ];
+
+        setDocInfo(dummyDocInfo);
+        setTableData(dummyTableData);
+    }, 1000);
+}
+
+
+    function handleDelete(id) {
+    const updatedData = tableData.filter(row => row.id !== id);
+    setTableData(updatedData);
+}
+
+
+
+
+
+
+        // function handleChange(e) {
+        //     console.log(e.target.files);
+        //     setFile(URL.createObjectURL(e.target.files[0]));
+        // }
 
 
     return (
@@ -43,7 +98,8 @@ export default function Document_management() {
                                             <h4>Document Management</h4>
                                             <div className='btnright'>
 
-                                                <button type="button" className='canclebtn'>Close</button>
+                                                <button type="button" className='canclebtn' onClick={() => navigate('/dashboard')}>Close</button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -62,7 +118,13 @@ export default function Document_management() {
                                                             </OverlayTrigger> </label>
                                                     </div>
                                                     <div className='col-sm-8'>
-                                                        <input type="text" name="docname" ></input>
+                                                        <input
+                                                            type="text"
+                                                            name="docname"
+                                                            value={docName}
+                                                            onChange={(e) => setDocName(e.target.value)}
+                                                            />
+
                                                     </div>
                                                 </div>
 
@@ -70,7 +132,10 @@ export default function Document_management() {
                                                     <div className='col-sm-4'>
                                                         <label htmlFor="avatarimg">Document Path
                                                             <OverlayTrigger placement="top" overlay={<Tooltip>Upload Document</Tooltip>}  >
-                                                                <Button  > <i class="bi bi-exclamation"></i></Button>
+                                                             
+                                                             
+                                                             
+                                                                <Button > <i class="bi bi-exclamation"></i></Button>
                                                             </OverlayTrigger> </label>
                                                     </div>
                                                     <div className='col-sm-8'>
@@ -103,19 +168,19 @@ export default function Document_management() {
                                     <div class="row">
                                         <div className="docbox">
                                             <span>Document Size</span>
-                                            <p className='maindocbox'></p>
+                                            <p className='maindocbox'>{docInfo?.size || "--"}</p>
                                         </div>
                                         <div className="docbox">
                                             <span>Number of Pages</span>
-                                            <p className='maindocbox'></p>
+                                            <p className='maindocbox'>{docInfo?.pages || "--"}</p>
                                         </div>
                                         <div className="docbox">
                                             <span>Number of Images</span>
-                                            <p className='maindocbox'></p>
+                                            <p className='maindocbox'>{docInfo?.images || "--"}</p>
                                         </div>
                                         <div className="docbox">
                                             <span>Number of Tables</span>
-                                            <p className='maindocbox'></p>
+                                            <p className='maindocbox'>{docInfo?.tables || "--"}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -163,52 +228,46 @@ export default function Document_management() {
                                                     <td> </td>
                                                 </tr>
 
-                                                <tr>
-                                                    <td><span className='text-center'>1</span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td className='usernamepic'><img src={userpic} className="propic" alt="profile pic" /> <span>Ram Singh</span></td>
-                                                    <td><span className='trashicon'><i class="bi bi-trash"></i></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span className='text-center'>2</span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td className='usernamepic'><img src={userpic} className="propic" alt="profile pic" /> <span>Ram Singh</span></td>
-                                                    <td><span className='trashicon'><i class="bi bi-trash"></i></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span className='text-center'>3</span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td className='usernamepic'><img src={userpic} className="propic" alt="profile pic" /> <span>Ram Singh</span></td>
-                                                    <td><span className='trashicon'><i class="bi bi-trash"></i></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span className='text-center'>4</span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td className='usernamepic'><img src={userpic} className="propic" alt="profile pic" /> <span>Ram Singh</span></td>
-                                                    <td><span className='trashicon'><i class="bi bi-trash"></i></span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span className='text-center'>5</span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td><span></span></td>
-                                                    <td className='usernamepic'><img src={userpic} className="propic" alt="profile pic" /> <span>Ram Singh</span></td>
-                                                    <td><span className='text-center'><i class="bi bi-trash"></i></span></td>
+                                               {tableData.map((row, index) => (
+                                                 /*<tr key={row.id}>
+                                                        <td><span className='text-center'>{index + 1}</span></td>
+                                                        <td><span>{row.name}</span></td>
+                                                        <td><span>{row.path}</span></td>
+                                                        <td><span>{row.time}</span></td>
+                                                        <td><span>{row.meta}</span></td>
+                                                        <td className='usernamepic'>
+                                                            <img src={userpic} className="propic" alt="profile pic" />
+                                                            <span>{row.uploadedBy}</span>
+                                                        </td>
+                                                        <td><span className='trashicon'><i class="bi bi-trash"></i></span></td>
+                                                    </tr>*/
+                                                    <tr key={row.id}>
+                                                    <td><span className='text-center'>{index + 1}</span></td>
+                                                    <td><span>{row.name}</span></td>
+                                                    <td><span>{row.path}</span></td>
+                                                    <td><span>{row.time}</span></td>
+                                                    <td><span>{row.meta}</span></td>
+                                                    <td className='usernamepic'>
+                                                        <img src={userpic} className="propic" alt="profile pic" />
+                                                        <span>{row.uploadedBy}</span>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            className='trashicon'
+                                                            style={{ cursor: 'pointer' }}
+                                                            onClick={() => handleDelete(row.id)}
+                                                        >
+                                                            <i className="bi bi-trash"></i>
+                                                        </span>
+                                                    </td>
                                                 </tr>
 
+                                                    
+                                                ))}
+
+
+
+    
 
 
                                             </tbody>
